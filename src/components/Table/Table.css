@@ -1,0 +1,169 @@
+caption {
+  color: #272833;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28px;
+  position: absolute;
+  text-align: left;
+  top: -66px; /* offset to move caption outside of table wrapper */
+}
+
+table {
+  border-collapse: collapse;
+  line-height: 150%;
+  table-layout: fixed;
+  width: 100%;
+}
+
+thead {
+  display: none;
+}
+
+thead th,
+.purchase-date-label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+tr {
+  border: 1px solid #cdced9;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em 0.5em;
+  column-gap: 8px;
+  row-gap: 16px;
+}
+
+tr + tr {
+  margin-top: 12px;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+tbody th,
+tbody td {
+  order: 0;
+}
+
+.icon-cell {
+  align-items: center;
+  display: flex;
+  order: -10;
+}
+
+.name-cell {
+  flex: 50% 1 0;
+  order: -5;
+}
+
+.price-cell {
+  order: -1;
+}
+
+.date-cell {
+  order: 10;
+}
+
+.category-cell {
+  display: none;
+}
+
+.name-cell,
+.price-cell {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.icon {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.table-wrapper {
+  position: relative;
+}
+
+.long-date {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  caption {
+    color: #16145a;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: left;
+    top: -74px; /* offset to move caption outside of table wrapper */
+  }
+
+  table {
+    color: #272833;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  thead tr {
+    border-bottom: 1px solid #e7e7ed;
+    border-radius: 0;
+  }
+
+  tr {
+    align-items: flex-start;
+    border: none;
+    display: flex;
+  }
+
+  tr + tr {
+    margin-top: 0;
+  }
+
+  tbody > tr {
+    height: 130px;
+  }
+
+  tbody th,
+  tbody td,
+  .icon-cell,
+  .name-cell,
+  .price-cell,
+  .date-cell {
+    order: 0;
+  }
+
+  .name-cell {
+    flex: 163px 1 0;
+  }
+
+  .category-cell {
+    display: table-cell;
+  }
+
+  th,
+  td {
+    flex: 163px 1 0;
+    padding: 20px;
+  }
+
+  .table-wrapper {
+    border: 1px solid #e7e7ed;
+    border-radius: 10px;
+  }
+
+  .medium-date,
+  .purchase-date-label {
+    display: none;
+  }
+
+  .medium-date {
+    display: block;
+  }
+}
