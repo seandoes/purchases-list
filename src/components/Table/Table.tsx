@@ -32,7 +32,7 @@ function Table({ data }: { data: Purchase[] }) {
                 <img className='icon' src={purchase.location} alt='' />
               </td>
               <td className='date-cell'>
-                {/* screen readers will already announce the header for this cell so we don't want to repeat that for screen reader users  */}
+                {/* screen readers will already announce the header for this cell so we don't want to repeat that for screen reader users */}
                 <div aria-hidden='true' className='purchase-date-label'>
                   Purchase Date:
                 </div>

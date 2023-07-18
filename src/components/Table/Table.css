@@ -92,7 +92,7 @@ tbody td {
   display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   caption {
     color: #16145a;
     font-size: 40px;
@@ -120,6 +120,7 @@ tbody td {
     align-items: flex-start;
     border: none;
     display: flex;
+    flex-wrap: nowrap;
   }
 
   tr + tr {
@@ -127,7 +128,7 @@ tbody td {
   }
 
   tbody > tr {
-    height: 130px;
+    min-height: 130px;
   }
 
   tbody th,
